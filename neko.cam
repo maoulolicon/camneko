@@ -20,13 +20,7 @@ countries = data['countries']
 
 ({key}) - {value["country"]} / ({value["count"]})  ')
     print("")
-
-
-
-try:
-   
-
-    country = input("Code(##) : ")
+try: country = input("Code(##) : ")
     res = requests.get(
         f"http://www.insecam.org/en/bycountry/{country}", headers=headers
     )
